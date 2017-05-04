@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+}
+
+form {
+    background: #000;
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+}
+
+form button {
+    width: 9%;
+    background: green;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+.sidebar {
+    padding-top: 80px;
+    height: 100vh;
+    display: inline-block;
+    width: 30vw;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+}
+
+.main {
+    height: 100vh;
+    display: inline-block;
+    width: 69%;
+    position: absolute;
+    right: 0;
+    padding-top: 30px;
+}
+
+li {
+    display: block;
+}
+
+.typing-text {
+    position: fixed;
+    bottom: 6vh;
+    left: 31vw;
+}
+
+
+
+.login-btn{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    top: 40%;
+    padding: 28px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.width30{
+    width: 30%;
+}
+.logout{
+    position: fixed;
+    right: 0;
+    padding: 15px 40px;
+    border: 1px black solid;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: red;
+    color: white;
+}
